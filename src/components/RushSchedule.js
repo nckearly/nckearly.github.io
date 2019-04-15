@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from './Typography';
 import Dialog from '@material-ui/core/Dialog';
-
+import Paper from '@material-ui/core/Paper';
+import { withStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Typography from './Typography';
 
 const styles = theme => ({
   root: {
@@ -12,18 +11,18 @@ const styles = theme => ({
     width: '35%',
     marginBottom: theme.spacing.unit * 5,
     [theme.breakpoints.down('xs')]: {
-      width: '100% !important'
+      width: '100% !important',
     },
   },
   paper: {
     margin: '0 auto',
     maxWidth: '380px',
     [theme.breakpoints.down('xs')]: {
-      width: '80% !important'
+      width: '80% !important',
     },
-                  '&:hover': {
-                    cursor: 'pointer',
-                  }
+    '&:hover': {
+      cursor: 'pointer',
+    },
   },
   header: {
     position: 'relative',
@@ -45,18 +44,18 @@ const styles = theme => ({
     borderRadius: '4px',
     height: '100%',
     width: '100%',
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
   click: {
     margin: theme.spacing.unit * 1,
-  }
+  },
 });
-const image = '/static/img/flyer.png';
+const image = 'static/img/flyer.png';
 
 class Rush extends React.Component {
   state = {
     clicked: false,
-  }
+  };
 
   handleChange = () => {
     this.setState(state => ({ clicked: !state.clicked }));
@@ -67,26 +66,20 @@ class Rush extends React.Component {
     const { clicked } = this.state;
     return (
       <div>
-            <div className={classes.header}>
-                <Typography align="center" variant="h2" marked="center">
-                    Rush Schedule
-                </Typography>
-            </div>
-        <Dialog open={clicked} onClose={this.handleChange} aria-labelledby="simple-dialog-title">
-          <img
-className={classes.flyerBig}
-            src={image}
-            alt="crest"
-          />
+        <div className={classes.header}>
+          <Typography align="center" variant="h2" marked="center">
+            Rush Schedule
+          </Typography>
+        </div>
+        <Dialog
+          open={clicked}
+          onClose={this.handleChange}
+          aria-labelledby="simple-dialog-title"
+        >
+          <img className={classes.flyerBig} src={image} alt="crest" />
         </Dialog>
-        <Paper
-          onClick={this.handleChange}
-          className={classes.paper}>
-                <img
-className={classes.flyerSmall}
-                    src={image}
-                    alt="crest"
-                    />
+        <Paper onClick={this.handleChange} className={classes.paper}>
+          <img className={classes.flyerSmall} src={image} alt="crest" />
         </Paper>
         <Typography className={classes.click} variant="body1" align="center">
           click to enlarge
@@ -96,8 +89,8 @@ className={classes.flyerSmall}
   }
 }
 
-  Rush.propTypes = {
-    classes: PropTypes.object.isRequired,
+Rush.propTypes = {
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Rush);

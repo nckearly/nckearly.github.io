@@ -175,7 +175,7 @@ class Grid extends React.Component {
         <div className={classes.item}>
           <img
             className={classes.image}
-            src="static/img/Crest.png"
+            src="static/img/crest.png"
             alt="vision"
           />
           <Typography align="center" variant="h4" marked="center">

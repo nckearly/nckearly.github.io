@@ -88,7 +88,7 @@ function ProductHeroLayout(props) {
           {!override && (
             <img
               className={!header && classes.img}
-              src={header || '/static/img/colostatex3.png'}
+              src={header || 'static/img/colostatex3.png'}
               alt="wonder"
               width={width || '60%em'}
             />

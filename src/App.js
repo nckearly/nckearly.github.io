@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <Router basename="/sigtaucolostate">
+        <Router basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route component={Home} path="/" exact />
             <Route component={Join} path="/join/" />

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/dev/src/sigtaucolostate/build/precache-manifest.c37b3c8722048a010c495c5b5967ac44.js"
+  "/sigtaucolostate/precache-manifest.7ed996cc4ef483610ef4945a543403ef.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/dev/src/sigtaucolostate/build/index.html", {
+workbox.routing.registerNavigationRoute("/sigtaucolostate/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

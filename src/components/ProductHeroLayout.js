@@ -99,7 +99,7 @@ function ProductHeroLayout(props) {
         <div className={classNames(classes.background, backgroundClassName)} />
         <img
           className={classes.arrowDown}
-          src="/static/img/arrow-down-secondary.png"
+          src="static/img/arrow-down-secondary.png"
           height="32"
           width="32"
           alt="arrow down"

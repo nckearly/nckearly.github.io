@@ -44,7 +44,7 @@ function About(props) {
                     <Grid item xs={12} md={12}>
                         <div className={classes.item}>
                             <img
-                                src="/static/img/crest.png"
+                                src="static/img/crest.png"
                                 alt="crest"
                             />
                             <div className={classes.title}><Typography variant="h2" marked="center" className={classes.title}><strong>Sigma Tau Gamma</strong></Typography></div>

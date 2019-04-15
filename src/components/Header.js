@@ -86,7 +86,7 @@ onClick={this.toggleDrawer('left', true)}
 
                                 <img
                                     className={classes.headerImage}
-                                    src="/static/img/logo.svg"
+                                    src="static/img/logo.svg"
                                     alt="Sig Tau"
                                     width="125"
 

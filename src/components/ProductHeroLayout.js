@@ -52,8 +52,9 @@ const styles = theme => ({
     position: 'relative',
     left: '13%',
     [theme.breakpoints.down('sm')]: {
-      width: '80%',
-      left: '4%',
+      width: '95%',
+      left: '0%',
+      right: '20%',
     },
     
   },

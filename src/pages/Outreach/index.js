@@ -98,7 +98,7 @@ class App extends React.Component {
                 variant="h5"
                 component="span"
                 >
-                Director of Recruitment
+                Director of Community Engagement
 
                 </Typography>
             <br />
@@ -112,7 +112,7 @@ class App extends React.Component {
               onClose={this.handleClose}
               MenuListProps={{ disablePadding: true }}
             >
-          <Community onClick={this.handleClose} disableMargins="true" />
+          <Community onClick={this.handleClose} disableMargins />
             </Menu>
         </div>
       </Template>

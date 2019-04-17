@@ -39,6 +39,16 @@ const styles = theme => ({
       cursor: "pointer",
       borderBottom: `solid 2px ${theme.palette.secondary.main}`
     }
+  },
+  contactTel: {
+    textDecoration: "none",
+    color: "black",
+    fontSize: 16,
+    marginLeft: theme.spacing.unit * 2,
+    "&:hover": {
+      cursor: "pointer",
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`
+    }
   }
 });
 

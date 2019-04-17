@@ -39,7 +39,17 @@ const styles = theme => ({
       cursor: "pointer",
       borderBottom: `solid 2px ${theme.palette.secondary.main}`
     }
-  }
+  },
+  contactTel: {
+    textDecoration: "none",
+    color: "black",
+    fontSize: 16,
+    marginLeft: theme.spacing.unit * 2,
+    "&:hover": {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`
+    }
+  },
 });
 
 function EducationCard(props) {
@@ -68,7 +78,7 @@ function EducationCard(props) {
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <span className={classes.contactText}>(720) 989-7398</span>
+          <a className={classes.contactTel} href="tel:7209897398">(720) 989-7398</a>
         </Typography>
       </CardContent>
     </Card>

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sigtaucolostate/precache-manifest.eb72c670879719e6dbacdf5e4c962fa9.js"
+  "/sigtaucolostate/precache-manifest.a72e88152e7c5cdc656ba04e39589518.js"
 );
 
 workbox.clientsClaim();

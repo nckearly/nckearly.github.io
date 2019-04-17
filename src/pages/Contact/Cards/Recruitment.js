@@ -3,46 +3,56 @@ import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
 import MailIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '../../../components/Typography';
-import classNames from 'classnames';
 
 const styles = theme => ({
   cardMargin: {
-    margin: theme.spacing.unit * 3
+    margin: theme.spacing.unit * 3,
   },
   card: {
-    display: "inline-block",
-    width: "17%",
-    minWidth: 300
+    display: 'inline-block',
+    width: '17%',
+    minWidth: 300,
   },
   title: {
     fontSize: 24,
-    marginBottom: 5
+    marginBottom: 5,
   },
   name: {
     fontSize: 19,
-    marginBottom: 12
+    marginBottom: 12,
   },
   contact: {
-    display: "flex",
-    margin: theme.spacing.unit * 1
+    display: 'flex',
+    margin: theme.spacing.unit * 1,
   },
   contactText: {
     fontSize: 16,
-    marginLeft: theme.spacing.unit * 2
+    marginLeft: theme.spacing.unit * 2,
   },
   contactEmail: {
-    textDecoration: "none",
-    color: "black",
+    textDecoration: 'none',
+    color: 'black',
     fontSize: 16,
     marginLeft: theme.spacing.unit * 2,
-    "&:hover": {
-      cursor: "pointer",
-      borderBottom: `solid 2px ${theme.palette.secondary.main}`
-    }
-  }
+    '&:hover': {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
+  },
+  contactTel: {
+    textDecoration: 'none',
+    color: 'black',
+    fontSize: 16,
+    marginLeft: theme.spacing.unit * 2,
+    '&:hover': {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
+  },
 });
 
 function EducationCard(props) {
@@ -76,7 +86,9 @@ function EducationCard(props) {
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <span className={classes.contactText}>(303) 905-5459</span>
+          <a className={classes.contactTel} href="tel:3039055459">
+            (303) 905-5459
+          </a>
         </Typography>
       </CardContent>
     </Card>

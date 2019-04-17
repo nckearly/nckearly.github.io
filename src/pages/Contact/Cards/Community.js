@@ -3,47 +3,56 @@ import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
 import MailIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '../../../components/Typography';
-import classNames from 'classnames';
 
 const styles = theme => ({
   cardMargin: {
-    margin: theme.spacing.unit * 3
+    margin: theme.spacing.unit * 3,
   },
   card: {
     display: 'inline-block',
-    margin: theme.spacing.unit * 3,
-    width: "17%",
-    minWidth: 325
+    width: '17%',
+    minWidth: 325,
   },
   title: {
     fontSize: 24,
-    marginBottom: 5
+    marginBottom: 5,
   },
   name: {
     fontSize: 19,
-    marginBottom: 12
+    marginBottom: 12,
   },
   contact: {
-    display: "flex",
-    margin: theme.spacing.unit * 1
+    display: 'flex',
+    margin: theme.spacing.unit * 1,
   },
   contactText: {
     fontSize: 16,
-    marginLeft: theme.spacing.unit * 2
+    marginLeft: theme.spacing.unit * 2,
   },
   contactEmail: {
-    textDecoration: "none",
-    color: "black",
+    textDecoration: 'none',
+    color: 'black',
     fontSize: 16,
     marginLeft: theme.spacing.unit * 2,
-    "&:hover": {
-      cursor: "pointer",
-      borderBottom: `solid 2px ${theme.palette.secondary.main}`
-    }
-  }
+    '&:hover': {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
+  },
+  contactTel: {
+    textDecoration: 'none',
+    color: 'black',
+    fontSize: 16,
+    marginLeft: theme.spacing.unit * 2,
+    '&:hover': {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
+  },
 });
 
 function CommunityCard(props) {
@@ -53,7 +62,7 @@ function CommunityCard(props) {
     <Card
       className={classNames(
         classes.card,
-        !disableMargins && classes.cardMargin
+        !disableMargins && classes.cardMargin,
       )}
     >
       <CardContent>
@@ -68,13 +77,18 @@ function CommunityCard(props) {
         <Typography className={classes.name}>Tyler Franks</Typography>
         <Typography className={classes.contact}>
           <MailIcon />
-          <a className={classes.contactEmail} href="mailto:Tylermfranks10@gmail.com">
+          <a
+            className={classes.contactEmail}
+            href="mailto:Tylermfranks10@gmail.com"
+          >
             Tylermfranks10@gmail.com
           </a>
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <span className={classes.contactText}>(702) 439-0592</span>
+          <a className={classes.contactTel} href="tel:7024390592">
+            (702) 439-0592
+          </a>
         </Typography>
       </CardContent>
     </Card>

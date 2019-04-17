@@ -23,12 +23,19 @@ const styles = theme => ({
     },
     button: {
         minWidth: 200,
+        [theme.breakpoints.down('sm')]: {
+            width: 50,
+        },
     },
     h5: {
         marginBottom: theme.spacing.unit * 4,
         marginTop: theme.spacing.unit * 4,
         [theme.breakpoints.up('sm')]: {
             marginTop: theme.spacing.unit * 10,
+        },
+        [theme.breakpoints.down('sm')]: {
+            marginTop: theme.spacing.unit * 4,
+            fontSize: '4.7vw',
         },
     },
     more: {

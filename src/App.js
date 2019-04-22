@@ -1,7 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import theme from './assets/theme';
 import Alumni from './pages/Alumni';
 import Contact from './pages/Contact';

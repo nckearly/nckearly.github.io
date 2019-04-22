@@ -73,7 +73,7 @@ class App extends React.Component {
   }
 
   handleReload = () => {
-    window.location.href = '/Loader';
+    window.location.reload();
     this.hasher();
   };
 

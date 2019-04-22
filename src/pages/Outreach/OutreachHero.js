@@ -1,20 +1,19 @@
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import ProductHeroLayout from '../../components/ProductHeroLayout';
 import Typography from '../../components/Typography';
 
 const backgroundImage =
   // 'https://images.unsplash.com/17/unsplash_5252bb51404f8_1.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
- 'https://images.unsplash.com/photo-1472390155757-7704d54b9dc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
+  'https://images.unsplash.com/photo-1472390155757-7704d54b9dc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80';
 
 const styles = theme => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "0f07af", // Average color of the background image.
-    backgroundPosition: "center",
+    backgroundColor: '0f07af', // Average color of the background image.
+    backgroundPosition: 'center',
   },
   button: {
     minWidth: 200,
@@ -22,9 +21,9 @@ const styles = theme => ({
   h5: {
     marginBottom: theme.spacing.unit * 4,
     marginTop: theme.spacing.unit * 0,
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up('sm')]: {
       marginTop: theme.spacing.unit * 10,
-    }
+    },
   },
   more: {
     marginTop: theme.spacing.unit * 2,
@@ -37,7 +36,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 2,
     [theme.breakpoints.down('sm')]: {
       fontSize: 80,
-    }
+    },
   },
   h2: {
     color: 'white',
@@ -59,7 +58,7 @@ function OutreachHero(props) {
         width="60%"
       >
         {/* Increase the network loading priority of the background image. */}
-        <img style={{ display: "none" }} src={backgroundImage} alt="" />
+        <img style={{ display: 'none' }} src={backgroundImage} alt="" />
 
         {
           <React.Fragment>
@@ -74,7 +73,8 @@ function OutreachHero(props) {
             </div>
             <div className={classes.h5}>
               <Typography color="inherit" align="center" variant="h5">
-                <em>April 12th, 2019</em> <br />LSC Theater Doors open 6:00 pm
+                <em>April 12th, 2019</em> <br />
+                LSC Theater Doors open 6:00 pm
               </Typography>
               <br />
 

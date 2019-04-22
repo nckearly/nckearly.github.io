@@ -9,46 +9,46 @@ import Typography from '../../../components/Typography';
 
 const styles = theme => ({
   card: {
-    display: "inline-block",
+    display: 'inline-block',
     margin: theme.spacing.unit * 3,
-    width: "17%",
-    minWidth: 300
+    width: '17%',
+    minWidth: 325,
   },
   title: {
     fontSize: 24,
-    marginBottom: 5
+    marginBottom: 5,
   },
   name: {
     fontSize: 19,
-    marginBottom: 12
+    marginBottom: 12,
   },
   contact: {
-    display: "flex",
-    margin: theme.spacing.unit * 1
+    display: 'flex',
+    margin: theme.spacing.unit * 1,
   },
   contactText: {
     fontSize: 16,
-    marginLeft: theme.spacing.unit * 2
+    marginLeft: theme.spacing.unit * 2,
   },
   contactEmail: {
-    textDecoration: "none",
-    color: "black",
+    textDecoration: 'none',
+    color: 'black',
     fontSize: 16,
     marginLeft: theme.spacing.unit * 2,
-    "&:hover": {
-      cursor: "pointer",
-      borderBottom: `solid 2px ${theme.palette.secondary.main}`
-    }
+    '&:hover': {
+      cursor: 'pointer',
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
   },
   contactTel: {
-    textDecoration: "none",
-    color: "black",
+    textDecoration: 'none',
+    color: 'black',
     fontSize: 16,
     marginLeft: theme.spacing.unit * 2,
-    "&:hover": {
+    '&:hover': {
       cursor: 'pointer',
-      borderBottom: `solid 2px ${theme.palette.secondary.main}`
-    }
+      borderBottom: `solid 2px ${theme.palette.secondary.main}`,
+    },
   },
 });
 
@@ -78,7 +78,9 @@ function EducationCard(props) {
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <a className={classes.contactTel} href="tel:7209897398">(720) 989-7398</a>
+          <a className={classes.contactTel} href="tel:7209897398">
+            (720) 989-7398
+          </a>
         </Typography>
       </CardContent>
     </Card>

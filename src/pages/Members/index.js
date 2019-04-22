@@ -3,16 +3,14 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
-import { withStyles, Input } from '@material-ui/core';
+import { withStyles } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import Template from '../../components/PageTemplate';
+import Typography from '../../components/Typography';
 import ProductHero from './MembersHero';
 import './styles.css';
-import Typography from '../../components/Typography';
-import TextField from '@material-ui/core/TextField';
-import { withRouter } from 'react-router-dom';
-
-
 
 const styles = theme => ({
   content: {
@@ -71,45 +69,45 @@ const styles = theme => ({
 const pass = 'password';
 
 class App extends React.Component {
-  state = { isValidated: false, input: '' }
+  state = { isValidated: false, input: '' };
 
-  updateHandler = (event) => {
+  updateHandler = event => {
     this.setState({ input: event.target.value });
-  }
+  };
 
   handleSubmit = () => {
     if (pass === this.state.input) {
       this.setState({ isValidated: true });
     }
-  }
-
+  };
 
   render() {
     const { isValidated, input } = this.state;
     const { classes } = this.props;
     if (isValidated) {
-      this.props.history.push('/Loader/')
+      this.props.history.push('/Loader/');
     }
     return (
       <Template>
         <ProductHero />
         <div className={classes.locked}>
           <Typography variant="h5" align="center">
-          This page is restricted to members only, please enter the password below to continue
+            This page is restricted to members only, please enter the password
+            below to continue
           </Typography>
         </div>
         <div className={classes.password}>
           <form onSubmit={this.handleSubmit}>
-          <TextField
-            id="standard-password-input"
-            label="Password"
-            className={classes.textField}
-            type="password"
-            autoComplete="current-password"
-            margin="normal"
-            value={input}
-            // eslint-disable-next-line react/jsx-handler-names
-            onChange={this.updateHandler}
+            <TextField
+              id="standard-password-input"
+              label="Password"
+              className={classes.textField}
+              type="password"
+              autoComplete="current-password"
+              margin="normal"
+              value={input}
+              // eslint-disable-next-line react/jsx-handler-names
+              onChange={this.updateHandler}
             />
           </form>
         </div>

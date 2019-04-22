@@ -1,20 +1,24 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
 import { withStyles } from '@material-ui/core';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import Paper from '@material-ui/core/Paper';
 import React from 'react';
 import Template from '../../components/PageTemplate';
 import Typography from '../../components/Typography';
 import ProductHero from './RoseHero';
-import Paper from '@material-ui/core/Paper';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
 
 // update the current white rose here
 const current = 'Elizabeth McNamer';
 const firstName = 'Elizabeth';
-const image = 'https://scontent-den4-1.cdninstagram.com/vp/2012acc402195337c5db375acb9c53d5/5D4DE840/t51.2885-15/e35/31054663_199363374007543_3047605172860616704_n.jpg?_nc_ht=scontent-den4-1.cdninstagram.com';
+const image =
+  'https://scontent-den4-1.cdninstagram.com/vp/2012acc402195337c5db375acb9c53d5/5D4DE840/t51.2885-15/e35/31054663_199363374007543_3047605172860616704_n.jpg?_nc_ht=scontent-den4-1.cdninstagram.com';
 // eslint-disable-next-line max-len
-const flavuhText = 'Elizabeth is the very first White Rose. She was chosen based off of her dedication to seeing our chapter grow and become successful. She has been an avid supporter during all of our events and has made it a point to help in any way that she can.We will always be thankful for her contributions to our chapter and can\'t wait to see what she does next! ';
+const flavuhText =
+  // eslint-disable-next-line max-len
+  "Elizabeth is the very first White Rose. She was chosen based off of her dedication to seeing our chapter grow and become successful. She has been an avid supporter during all of our events and has made it a point to help in any way that she can.We will always be thankful for her contributions to our chapter and can't wait to see what she does next! ";
 const tileData = [
   {
     img:
@@ -106,7 +110,6 @@ const tileData = [
   },
 ];
 
-
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -148,15 +151,14 @@ const styles = theme => ({
     justifyContent: 'center',
     [theme.breakpoints.down('md')]: {
       display: 'none',
-    }
+    },
   },
   gridList: {
     width: '80%',
-
   },
   text: {
     margin: theme.spacing.units * 2,
-  }
+  },
 });
 
 class WhiteRose extends React.Component {
@@ -178,31 +180,22 @@ class WhiteRose extends React.Component {
             </Typography>
           </div>
           <Paper className={classes.paper}>
-            <img className={classes.rose} src={image} alt="white-rose"/>
+            <img className={classes.rose} src={image} alt="white-rose" />
           </Paper>
           <Typography variant="h5" className={classes.text}>
             {current}'s contribution to the betterment of Sig Tau has been
             recognized by electing her the <em>White Rose.</em>
             <br />
-            As the White Rose, {firstName} is recognized as an honorary
-            member of the Fraternity, and an annual banquet is held in her
-            honor.
+            As the White Rose, {firstName} is recognized as an honorary member
+            of the Fraternity, and an annual banquet is held in her honor.
           </Typography>
           <Typography className={classes.flavor} variant="h5">
             {flavuhText}
           </Typography>
           <div className={classes.grid}>
-            <GridList
-              cellHeight={100}
-              className={classes.gridList}
-              cols={50}
-            >
+            <GridList cellHeight={100} className={classes.gridList} cols={50}>
               {tileData.map(tile => (
-                <GridListTile
-                  key={tile.img}
-                  cols={tile.cols}
-                  rows={tile.rows}
-                >
+                <GridListTile key={tile.img} cols={tile.cols} rows={tile.rows}>
                   <img src={tile.img} alt={tile.title} />
                 </GridListTile>
               ))}

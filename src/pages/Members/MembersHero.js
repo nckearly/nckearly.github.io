@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '../../components/Typography';
 
-
 const styles = theme => ({
   button: {
     minWidth: 200,
@@ -28,24 +27,22 @@ function MembersHero(props) {
 
   return (
     <div className="Hero">
-
-        {
-          <React.Fragment>
-            <div>
-              <br />
-              <Typography
-                className={classes.h2}
-                align="center"
-                variant="h2"
+      {
+        <React.Fragment>
+          <div>
+            <br />
+            <Typography
+              className={classes.h2}
+              align="center"
+              variant="h2"
               marked="center"
-              >
-                Members
-              </Typography>
-            </div>
-            <div className={classes.spacer} />
-          </React.Fragment>
-        }
-
+            >
+              Members
+            </Typography>
+          </div>
+          <div className={classes.spacer} />
+        </React.Fragment>
+      }
     </div>
   );
 }

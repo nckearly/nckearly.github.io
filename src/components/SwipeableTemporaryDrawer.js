@@ -1,21 +1,21 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
+import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import { withStyles } from '@material-ui/core/styles';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Home from '@material-ui/icons/Home';
-import Contact from '@material-ui/icons/MoveToInbox';
 import Lock from '@material-ui/icons/Lock';
-import Join from 'mdi-material-ui/AccountPlus';
-import Outreach from 'mdi-material-ui/HomeGroup';
+import Contact from '@material-ui/icons/MoveToInbox';
 import School from '@material-ui/icons/School';
 import Rose from '@material-ui/icons/SpaOutlined';
+import Join from 'mdi-material-ui/AccountPlus';
+import Outreach from 'mdi-material-ui/HomeGroup';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const styles = {
@@ -26,12 +26,14 @@ const styles = {
     width: 'auto',
   },
 };
-const menu = [{ text: 'Home', icon: <Home />, path: '/' },
-{ text: 'Join Now', icon: <Join />, path: '/Join' },
+const menu = [
+  { text: 'Home', icon: <Home />, path: '/' },
+  { text: 'Join Now', icon: <Join />, path: '/Join' },
   { text: 'Contact Us', icon: <Contact />, path: '/Contact' },
   { text: 'Outreach', icon: <Outreach />, path: '/Outreach' },
   { text: 'Alumni', icon: <School />, path: '/Alumni' },
-  { text: 'White Rose', icon: <Rose />, path: '/White-Rose' }];
+  { text: 'White Rose', icon: <Rose />, path: '/White-Rose' },
+];
 const memberMenu = [{ text: 'Members', icon: <Lock />, path: '/Members' }];
 class SwipeableTemporaryDrawer extends React.Component {
   render() {
@@ -40,7 +42,7 @@ class SwipeableTemporaryDrawer extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          {menu.map((listItem) => (
+          {menu.map(listItem => (
             <ListItem
               button
               key={listItem.text}
@@ -54,7 +56,7 @@ class SwipeableTemporaryDrawer extends React.Component {
         </List>
         <Divider />
         <List>
-          {memberMenu.map((listItem) => (
+          {memberMenu.map(listItem => (
             <ListItem
               button
               key={listItem.text}
@@ -69,10 +71,8 @@ class SwipeableTemporaryDrawer extends React.Component {
       </div>
     );
 
-
     return (
       <div>
-
         <SwipeableDrawer
           open={this.props.open}
           onClose={this.props.onToggleDrawer('left', false)}

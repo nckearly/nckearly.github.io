@@ -1,3 +1,7 @@
+// this file is out chapter history paragraph on the home page
+// its in the components section so it can be easily moved if we want a seporate about page
+// not much harm can be done by editing the file, its generally just plain text with formatting
+
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
@@ -24,8 +28,8 @@ const styles = theme => ({
     alignItems: 'center',
     padding: `0px ${theme.spacing.unit * 5}px`,
     [theme.breakpoints.down('xs')]: {
-      padding: `0px ${theme.spacing.unit * .2}px`,
-    }
+      padding: `0px ${theme.spacing.unit * 0.2}px`,
+    },
   },
   image: {
     height: 55,

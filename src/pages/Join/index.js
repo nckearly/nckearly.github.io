@@ -1,13 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 /* eslint-disable lines-between-class-members */
+import Menu from '@material-ui/core/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
-import ProductHero from './JoinHero';
 import Template from '../../components/PageTemplate';
 import RushSchedule from '../../components/RushSchedule';
 import Typography from '../../components/Typography';
-import './styles.css';
 import Recruitment from '../Contact/Cards/Recruitment';
-import Menu from '@material-ui/core/Menu';
+import ProductHero from './JoinHero';
+import './styles.css';
 
 const styles = theme => ({
   '@global': {},
@@ -18,18 +20,17 @@ const styles = theme => ({
     margin: theme.spacing.unit * 5,
   },
   popup: {
-    margin: "0 0",
+    margin: '0 0',
     padding: '0 0',
   },
   button: {
     color: theme.palette.primary.light,
-    display: "inline",
+    display: 'inline',
     '&:hover': {
       borderBottom: `solid ${theme.palette.secondary.main}`,
       cursor: 'pointer',
-    }
+    },
   },
-  
 });
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -53,7 +54,7 @@ class Join extends React.Component {
         <Template>
           <ProductHero />
           <RushSchedule />
-          
+
           <div className={classes.Rush}>
             <Typography variant="h5">
               Rushing is the first step in everyone's journey to join Sig Tau.
@@ -71,9 +72,8 @@ class Join extends React.Component {
                 onClick={this.handleClick}
                 variant="h5"
                 component="span"
-                >
+              >
                 Director of Recruitment
-                
               </Typography>
               {} on how to proceed further
             </Typography>

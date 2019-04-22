@@ -1,8 +1,9 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable linebreak-style */
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Button from '../../components/Button';
 import ProductHeroLayout from '../../components/ProductHeroLayout';
 import Typography from '../../components/Typography';
 
@@ -36,7 +37,7 @@ const styles = theme => ({
     marginBottom: theme.spacing.unit * 2,
     [theme.breakpoints.down('sm')]: {
       fontSize: 60,
-    }
+    },
   },
   h2: {
     color: 'white',
@@ -67,14 +68,17 @@ function RoseHero(props) {
                 Sigma Tau Gamma's
               </Typography>
               <br />
-              <Typography className={classes.h2} align="center" variant="h2" marked="center">
+              <Typography
+                className={classes.h2}
+                align="center"
+                variant="h2"
+                marked="center"
+              >
                 White Rose
               </Typography>
             </div>
-
           </React.Fragment>
         }
-
       </ProductHeroLayout>
     </div>
   );

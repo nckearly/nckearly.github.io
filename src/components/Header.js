@@ -1,3 +1,7 @@
+// this is the header for the website.
+// if you're looking to reformat it so the header features tabs, do it in this file
+
+/* eslint-disable react/jsx-handler-names */
 /* eslint-disable react/prop-types */
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
@@ -7,104 +11,104 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
-import SwipeableTemporaryDrawer from './SwipeableTemporaryDrawer';
 import { Link } from 'react-router-dom';
-
+import SwipeableTemporaryDrawer from './SwipeableTemporaryDrawer';
 
 // eslint-disable-next-line no-unused-vars
 const styles = theme => ({
-    root: {
-        flexGrow: 1,
+  root: {
+    flexGrow: 1,
+  },
+  grow: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    color: 'inherit',
+    marginLeft: -12,
+    marginRight: 20,
+    '&:hover': {
+      backgroundColor: theme.palette.primary.light,
     },
-    grow: {
-        flexGrow: 1,
+  },
+  logo: {
+    flexGrow: 1,
+    [theme.breakpoints.down('xs')]: {
+      alignItems: 'center',
     },
-    menuButton: {
-        color: "inherit",
-        marginLeft: -12,
-        marginRight: 20,
-        '&:hover': {
-            
-            backgroundColor: theme.palette.primary.light,
-        }
+  },
+  homeLogo: {
+    '&:hover': {
+      backgroundColor: theme.palette.primary.main,
     },
-    logo: {
-        flexGrow: 1,
-        [theme.breakpoints.down('xs')]: {
-            alignItems: 'center',
-        }
+  },
+  memberButton: {
+    '&:hover': {
+      backgroundColor: theme.palette.primary.light,
     },
-    homeLogo: {
-                '&:hover': {
-                    backgroundColor: theme.palette.primary.main,
-        },
-    },
-            memberButton: {
-                '&:hover': {
-                    backgroundColor: theme.palette.primary.light,
-                }
-            }
+  },
 });
 
-
 class Header extends React.Component {
-    state = {
-        left: false,
-    }
+  state = {
+    left: false,
+  };
 
-    toggleDrawer = (side, open) => () => {
-        this.setState({
-            [side]: open,
-        });
-    };
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
+  };
 
-    render() {
-        const { classes } = this.props;
+  render() {
+    const { classes } = this.props;
 
-        return (
-            <div>
-                <SwipeableTemporaryDrawer open={this.state.left} onToggleDrawer={this.toggleDrawer} />
-                <AppBar position="fixed">
-                    <Toolbar>
-                        <IconButton
-onClick={this.toggleDrawer('left', true)}
-                            className={classes.menuButton}
-                            aria-label="Menu"
-                        >
-
-                            <MenuIcon />
-                        </IconButton>
-                        <div className={classes.logo}>
-                            <Button
-                                className={classes.homeLogo}
-                            component={linkProps => (
-                                <Link {...linkProps} to="/" variant="button" />
-                                )}
-                                align="center">
-
-                            <Typography type="title">
-
-                                <img
-                                    className={classes.headerImage}
-                                    src="static/img/logo.svg"
-                                    alt="Sig Tau"
-                                    width="125"
-
-                                    />
-                            </Typography>
-                        </Button>
-                        </div>
-                        <Button
-                            className={classes.memberButton}
-                            color="inherit"
-                            component={linkProps => (
-                                <Link {...linkProps} to="/Members" variant="button" />
-                            )}>Members</Button>
-                    </Toolbar>
-                </AppBar>
+    return (
+      <div>
+        <SwipeableTemporaryDrawer
+          open={this.state.left}
+          onToggleDrawer={this.toggleDrawer}
+        />
+        <AppBar position="fixed">
+          <Toolbar>
+            <IconButton
+              onClick={this.toggleDrawer('left', true)}
+              className={classes.menuButton}
+              aria-label="Menu"
+            >
+              <MenuIcon />
+            </IconButton>
+            <div className={classes.logo}>
+              <Button
+                className={classes.homeLogo}
+                component={linkProps => (
+                  <Link {...linkProps} to="/" variant="button" />
+                )}
+                align="center"
+              >
+                <Typography type="title">
+                  <img
+                    className={classes.headerImage}
+                    src="static/img/logo.svg"
+                    alt="Sig Tau"
+                    width="125"
+                  />
+                </Typography>
+              </Button>
             </div>
-        );
-    }
+            <Button
+              className={classes.memberButton}
+              color="inherit"
+              component={linkProps => (
+                <Link {...linkProps} to="/Members" variant="button" />
+              )}
+            >
+              Members
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </div>
+    );
+  }
 }
 
 export default withStyles(styles)(Header);

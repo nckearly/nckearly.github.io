@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { withStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
@@ -46,7 +47,8 @@ const styles = theme => ({
   },
   arrowDown: {
     position: 'absolute',
-    bottom: theme.spacing.unit * 4,
+    marginTop: theme.spacing.unit * 2,
+    bottom: theme.spacing.unit * 2,
   },
   img: {
     position: 'relative',
@@ -56,7 +58,6 @@ const styles = theme => ({
       left: '0%',
       right: '20%',
     },
-    
   },
   img_container: {
     marginTop: theme.spacing.unit * 10,
@@ -73,8 +74,6 @@ function ProductHeroLayout(props) {
     children,
     classes,
     header,
-    button,
-    disableButton,
     width,
     override,
   } = props;
@@ -89,8 +88,10 @@ function ProductHeroLayout(props) {
           {!override && (
             <img
               className={!header && classes.img}
+              // the header image will at default be sig tau colostate. Use the "header" override to use youre own
               src={header || 'static/img/colostatex3.png'}
               alt="wonder"
+              // width will at default be 60%em for the header, use the "width" override for your own width
               width={width || '60%em'}
             />
           )}

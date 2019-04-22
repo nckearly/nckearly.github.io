@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import { withStyles } from '@material-ui/core/styles';
@@ -15,7 +16,7 @@ const styles = theme => ({
   card: {
     display: 'inline-block',
     width: '17%',
-    minWidth: 300,
+    minWidth: 325,
   },
   title: {
     fontSize: 24,

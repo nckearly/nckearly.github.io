@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -37,13 +38,22 @@ const styles = theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '10%',
+    width: '20%',
+    [theme.breakpoints.down('sm')]: {
+      width: '90%',
+    },
   },
   cards: {
-    
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
+  },
+  content: {
+    [theme.breakpoints.down('sm')]: {
+      width: '70%',
+      height: 50,
+    },
+    maxWidth: 200,
   },
 });
 

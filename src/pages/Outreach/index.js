@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
 import { withStyles } from '@material-ui/core';
+import Menu from '@material-ui/core/Menu';
 import React from 'react';
 import Template from '../../components/PageTemplate';
 import Typography from '../../components/Typography';
 import Community from '../Contact/Cards/Community';
 import ProductHero from './OutreachHero';
 import './styles.css';
-import Menu from '@material-ui/core/Menu';
 
 const styles = theme => ({
   content: {
@@ -25,7 +25,7 @@ const styles = theme => ({
     right: 21,
     [theme.breakpoints.down('md')]: {
       margin: `(${theme.spacing.unit * 1}) auto`,
-    marginRight: theme.spacing.unit * 1,
+      marginRight: theme.spacing.unit * 1,
     },
   },
   card: {
@@ -46,7 +46,7 @@ const styles = theme => ({
     '&:hover': {
       borderBottom: `solid ${theme.palette.secondary.main}`,
       cursor: 'pointer',
-    }
+    },
   },
 });
 
@@ -70,7 +70,12 @@ class App extends React.Component {
       <Template>
         <ProductHero />
         <div className={classes.content}>
-          <Typography className={classes.header} variant="h2" align="center" marked="center">
+          <Typography
+            className={classes.header}
+            variant="h2"
+            align="center"
+            marked="center"
+          >
             Community Outreach
           </Typography>
           <Typography className={classes.body} variant="h5">
@@ -82,7 +87,9 @@ class App extends React.Component {
             <ol id="list" className={classes.list}>
               <li className={classes.grey}>Ram Ride</li>
               <li>Special Olympics</li>
-              <li className={classes.grey}>Off-Campus Life at Colorado State University </li>
+              <li className={classes.grey}>
+                Off-Campus Life at Colorado State University{' '}
+              </li>
               <li>Special Olympics at Colorado State University</li>
               <li className={classes.grey}>Sigma Tau Gamma Headquarters </li>
               <li>Fortitude 5k by Boulder Boulder </li>
@@ -90,30 +97,30 @@ class App extends React.Component {
             </ol>
             <br />
             Organizations and Companies looking for volunteers please contact
-            our <Typography
-                className={classes.button}
-                aria-owns={anchorEl ? 'simple-menu' : undefined}
-                aria-haspopup="true"
-                onClick={this.handleClick}
-                variant="h5"
-                component="span"
-                >
-                Director of Community Engagement
-
-                </Typography>
+            our{' '}
+            <Typography
+              className={classes.button}
+              aria-owns={anchorEl ? 'simple-menu' : undefined}
+              aria-haspopup="true"
+              onClick={this.handleClick}
+              variant="h5"
+              component="span"
+            >
+              Director of Community Engagement
+            </Typography>
             <br />
           </Typography>
         </div>
         <div className={classes.card}>
-            <Menu
-              className={classes.popup}
-              anchorEl={anchorEl}
-              open={Boolean(anchorEl)}
-              onClose={this.handleClose}
-              MenuListProps={{ disablePadding: true }}
-            >
-          <Community onClick={this.handleClose} disableMargins />
-            </Menu>
+          <Menu
+            className={classes.popup}
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={this.handleClose}
+            MenuListProps={{ disablePadding: true }}
+          >
+            <Community onClick={this.handleClose} disableMargins />
+          </Menu>
         </div>
       </Template>
     );

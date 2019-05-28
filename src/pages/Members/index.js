@@ -66,7 +66,7 @@ const styles = theme => ({
   },
 });
 
-const pass = 'password';
+const pass = 'Esotes';
 
 class App extends React.Component {
   state = { isValidated: false, input: '' };

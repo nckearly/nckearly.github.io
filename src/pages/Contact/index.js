@@ -80,8 +80,9 @@ function Contact(props) {
         <EducationCard />
         <FinanceCard />
       </div>
-
-      <div className={classes.button}>
+      
+      {/* home button. currently removed
+       <div className={classes.button}>
         <Button
           color="secondary"
           variant="contained"
@@ -93,7 +94,7 @@ function Contact(props) {
         >
           <span className="join">Home</span>
         </Button>
-      </div>
+      </div> */}
     </Template>
   );
 }

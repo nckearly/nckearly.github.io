@@ -45,8 +45,10 @@ const styles = theme => ({
     zIndex: 1,
   },
   links: {
+    // width: '80%',
     display: 'flex',
     justifyContent: 'center',
+    flexWrap: 'wrap',
     [theme.breakpoints.down('xs')]: {
       flexDirection: 'column',
     },
@@ -80,7 +82,7 @@ class App extends React.Component {
     // un comment this line for the members page to be hashed.
     // this will disable the ability to refresh the page but will increase security
   hasher = () => {
-    // window.history.replaceState(window.history.state, 'test', `/${Math.random().toString(36).substring(7)}`);
+     // window.history.replaceState(window.history.state, 'test', `/${Math.random().toString(36).substring(7)}`);
   };
 
   render() {

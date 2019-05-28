@@ -50,6 +50,9 @@ const styles = theme => ({
     margin: theme.spacing.unit * 1,
   },
 });
+
+// this is the variable for the flyer
+// you dont have to change this, just replace the flyer.png image in the /img folder
 const image = 'static/img/flyer.png';
 
 class Rush extends React.Component {

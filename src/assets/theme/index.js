@@ -15,8 +15,18 @@ const theme = createMuiTheme({
       fontWeight: 'bold',
     },
     h5: {
+      fontWeight: 300,
       textAlign: 'center',
     },
+    h6: {
+      fontWeight: 300,
+    },
+    body1: {
+      fontWeight: 300,
+    },
+    subheading: {
+      fontWeight: 300,
+    }
   },
 });
 

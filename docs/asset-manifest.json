@@ -1,13 +1,13 @@
 {
-  "main.css": "/sigtaucolostate/static/css/main.a1d65e59.chunk.css",
-  "main.js": "/sigtaucolostate/static/js/main.4e446f18.chunk.js",
-  "main.js.map": "/sigtaucolostate/static/js/main.4e446f18.chunk.js.map",
-  "runtime~main.js": "/sigtaucolostate/static/js/runtime~main.5a0c812a.js",
-  "runtime~main.js.map": "/sigtaucolostate/static/js/runtime~main.5a0c812a.js.map",
-  "static/js/2.54dc39c1.chunk.js": "/sigtaucolostate/static/js/2.54dc39c1.chunk.js",
-  "static/js/2.54dc39c1.chunk.js.map": "/sigtaucolostate/static/js/2.54dc39c1.chunk.js.map",
-  "index.html": "/sigtaucolostate/index.html",
-  "precache-manifest.e678ff5e3426fcbd16ae6f0a3ee4cbe6.js": "/sigtaucolostate/precache-manifest.e678ff5e3426fcbd16ae6f0a3ee4cbe6.js",
-  "service-worker.js": "/sigtaucolostate/service-worker.js",
-  "static/css/main.a1d65e59.chunk.css.map": "/sigtaucolostate/static/css/main.a1d65e59.chunk.css.map"
+  "main.css": "/static/css/main.a1d65e59.chunk.css",
+  "main.js": "/static/js/main.800bc947.chunk.js",
+  "main.js.map": "/static/js/main.800bc947.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.fdfcfda2.js",
+  "runtime~main.js.map": "/static/js/runtime~main.fdfcfda2.js.map",
+  "static/js/2.54dc39c1.chunk.js": "/static/js/2.54dc39c1.chunk.js",
+  "static/js/2.54dc39c1.chunk.js.map": "/static/js/2.54dc39c1.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.f67e2c1c2bcb1af359a441656b407c01.js": "/precache-manifest.f67e2c1c2bcb1af359a441656b407c01.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.a1d65e59.chunk.css.map": "/static/css/main.a1d65e59.chunk.css.map"
 }

@@ -1,3 +1,4 @@
+// Calendar managed here
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
@@ -93,8 +94,12 @@ class App extends React.Component {
         <div className={classes.calendar}>
           <div
             className="app-placeholder-calendar"
-            data-id="proj_qIHBk10vHqsqqZzs8wLVd"
-          >
+            // calendar ID. If you need to change to another account, go to embedd and replace the data ID here.
+            // calendar link: https://app.eventscalendar.co/projects/proj_xbURFseO7YEAe1dZvQs8U
+            // Username: sigtaucolostate@gmail.com 
+            // PW: 1Esotes1
+          data-id="proj_xbURFseO7YEAe1dZvQs8U"
+        >
             {' '}
             <div className={classes.reload}>
               <IconButton onClick={this.handleReload}>

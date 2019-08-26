@@ -3,67 +3,67 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
 /* eslint-disable max-lines-per-function */
-import { withStyles } from "@material-ui/core";
-import IconButton from "@material-ui/core/IconButton";
-import CalendarIcon from "@material-ui/icons/DateRange";
-import React from "react";
-import Button from "../../components/Button";
-import Template from "../../components/PageTemplate";
-import ProductHero from "../Members/MembersHero";
-import "./styles.css";
+import { withStyles } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import CalendarIcon from '@material-ui/icons/DateRange';
+import React from 'react';
+import Button from '../../components/Button';
+import Template from '../../components/PageTemplate';
+import ProductHero from '../Members/MembersHero';
+import './styles.css';
 
 const styles = theme => ({
   content: {
-    margin: theme.spacing.unit * 4
+    margin: theme.spacing.unit * 4,
   },
   body: {
-    margin: theme.spacing.unit * 5
+    margin: theme.spacing.unit * 5,
   },
   header: {
-    marginBottom: theme.spacing.unit * 5
+    marginBottom: theme.spacing.unit * 5,
   },
   password: {
-    display: "flex",
-    justifyContent: "center"
+    display: 'flex',
+    justifyContent: 'center',
   },
   TextField: {
-    width: 500
+    width: 500,
   },
   locked: {
-    marginBottom: theme.spacing.unit * 3
+    marginBottom: theme.spacing.unit * 3,
   },
   reload: {
     margin: `${theme.spacing.unit * 2}px auto`,
-    display: "flex",
-    justifyContent: "center"
+    display: 'flex',
+    justifyContent: 'center',
   },
   calendar: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     margin: `${theme.spacing.unit * 5}px auto`,
     maxWidth: 1600,
-    zIndex: 1
+    zIndex: 1,
   },
   links: {
     // width: '80%',
-    display: "flex",
-    justifyContent: "center",
-    flexWrap: "wrap",
-    [theme.breakpoints.down("xs")]: {
-      flexDirection: "column"
-    }
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'column',
+    },
   },
   linkButtons: {
     minWidth: 200,
-    color: "white",
+    color: 'white',
     margin: `${theme.spacing.unit * 5}px ${theme.spacing.unit * 2}px`,
     backgroundColor: theme.palette.primary.main,
     border: `solid 2px ${theme.palette.primary.main}`,
-    "&:hover": {
-      color: theme.palette.primary.main
-    }
-  }
+    '&:hover': {
+      color: theme.palette.primary.main,
+    },
+  },
 });
 
 class App extends React.Component {
@@ -72,7 +72,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-    document.getElementById("Inffuse-Loader");
+    document.getElementById('Inffuse-Loader');
   }
 
   handleReload = () => {
@@ -100,7 +100,7 @@ class App extends React.Component {
             // PW: 1Esotes1
             data-id="proj_xbURFseO7YEAe1dZvQs8U"
           >
-            {" "}
+            {' '}
             <div className={classes.reload}>
               <IconButton onClick={this.handleReload}>
                 <CalendarIcon />
@@ -115,7 +115,7 @@ class App extends React.Component {
             component="a"
             target="_new"
           >
-            Omega-Fi
+            OmegaFi
           </Button>
           <Button
             className={classes.linkButtons}

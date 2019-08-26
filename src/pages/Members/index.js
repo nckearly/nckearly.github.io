@@ -1,3 +1,4 @@
+// this page manages the log in page, see the "Loader" page for the actual members page.
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-lines-per-function */
 /* eslint-disable no-unused-expressions */

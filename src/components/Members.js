@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 
+
 const CustomTableCell = withStyles(theme => ({
   head: {
     backgroundColor: theme.palette.primary.main,

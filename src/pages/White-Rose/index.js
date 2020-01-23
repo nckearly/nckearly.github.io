@@ -13,8 +13,7 @@ import ProductHero from './RoseHero';
 // update the current white rose here
 const current = 'Elizabeth McNamer';
 const firstName = 'Elizabeth';
-const image =
-  'https://scontent-den4-1.cdninstagram.com/vp/2012acc402195337c5db375acb9c53d5/5D4DE840/t51.2885-15/e35/31054663_199363374007543_3047605172860616704_n.jpg?_nc_ht=scontent-den4-1.cdninstagram.com';
+const image = 'static/img/White_Rose.jpg';
 // eslint-disable-next-line max-len
 const flavuhText =
   // eslint-disable-next-line max-len

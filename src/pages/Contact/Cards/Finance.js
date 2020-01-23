@@ -66,20 +66,20 @@ function EducationCard(props) {
         >
           Director of Finance
         </Typography>
-        <Typography className={classes.name}>Ryan Melin</Typography>
+        <Typography className={classes.name}>Nick Pontejos</Typography>
         <Typography className={classes.contact}>
           <MailIcon />
           <a
             className={classes.contactEmail}
-            href="mailto:Rmelin@rams.colostate.edu"
+            href="mailto:Pontejos@rams.colostate.edu"
           >
-            Rmelin@rams.colostate.edu
+            Pontejos@rams.colostate.edu
           </a>
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <a className={classes.contactTel} href="tel:7209897398">
-            (720) 989-7398
+          <a className={classes.contactTel} href="tel:3038850928">
+            (303) 885-0928
           </a>
         </Typography>
       </CardContent>

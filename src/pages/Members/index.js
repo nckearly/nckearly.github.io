@@ -5,6 +5,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/prefer-stateless-function */
 import { withStyles } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
@@ -19,6 +20,13 @@ const styles = theme => ({
   },
   body: {
     margin: theme.spacing.unit * 5,
+  },
+  button: {
+    marginTop: 20,
+    height: 40,
+    width: 100,
+    marginLeft: 20,
+    display: 'flex',
   },
   header: {
     marginBottom: theme.spacing.unit * 5,
@@ -110,7 +118,18 @@ class App extends React.Component {
               // eslint-disable-next-line react/jsx-handler-names
               onChange={this.updateHandler}
             />
+            <Button
+              type="submit"
+              label="login"
+              color="secondary"
+              variant="contained"
+              size="medium"
+              className={classes.button}
+            >
+              Login
+            </Button>
           </form>
+          <br />
         </div>
       </Template>
     );

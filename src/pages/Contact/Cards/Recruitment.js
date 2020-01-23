@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, withTheme } from '@material-ui/core/styles';
 import MailIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
 import classNames from 'classnames';
@@ -25,6 +25,18 @@ const styles = theme => ({
   name: {
     fontSize: 19,
     marginBottom: 12,
+  },
+  easteregg: {
+    display: 'flex',
+    
+  },
+  easter: {
+    display: 'inline-block',
+    fontSize: 14,
+    marginLeft: 10,
+    marginTop: 5,
+    color: 'white',
+    
   },
   contact: {
     display: 'flex',
@@ -75,20 +87,24 @@ function EducationCard(props) {
         >
           Director of Recruitment
         </Typography>
-        <Typography className={classes.name}>Ty Guerra</Typography>
+        <div className={classes.easteregg}>
+
+        <Typography className={classes.name}>Christo Erker</Typography>
+        <Typography className={classes.easter}>Expert Dragon Slayer</Typography>
+        </div>
         <Typography className={classes.contact}>
           <MailIcon />
           <a
             className={classes.contactEmail}
-            href="mailto:tyguerra@rams.colostate.edu"
+            href="mailto:Christo.a.erker@gmail.com"
           >
-            tyguerra@rams.colostate.edu
+            Christo.a.erker@gmail.com
           </a>
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <a className={classes.contactTel} href="tel:3039055459">
-            (303) 905-5459
+          <a className={classes.contactTel} href="tel:7208105410">
+            (720) 810-5410
           </a>
         </Typography>
       </CardContent>

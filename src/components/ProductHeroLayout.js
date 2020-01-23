@@ -47,7 +47,7 @@ const styles = theme => ({
   },
   arrowDown: {
     position: 'absolute',
-    marginTop: theme.spacing.unit * 2,
+    marginTop: theme.spacing.unit * 10,
     bottom: theme.spacing.unit * 2,
   },
   img: {
@@ -60,7 +60,7 @@ const styles = theme => ({
     },
   },
   img_container: {
-    marginTop: theme.spacing.unit * 10,
+    marginTop: '5%',
     width: '80%',
     [theme.breakpoints.up('sm')]: {
       width: '95%',
@@ -99,14 +99,6 @@ function ProductHeroLayout(props) {
         {children}
         <div className={classes.backdrop} />
         <div className={classNames(classes.background, backgroundClassName)} />
-        <img
-          className={classes.arrowDown}
-          src="static/img/arrow-down-secondary.png"
-          height="32"
-          width="32"
-          alt="arrow down"
-          color="white"
-        />
       </LayoutBody>
     </section>
   );

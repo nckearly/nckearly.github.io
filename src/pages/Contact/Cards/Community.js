@@ -75,20 +75,22 @@ function CommunityCard(props) {
         >
           Director of Community Engagement
         </Typography>
-        <Typography className={classes.name}>Tyler Franks</Typography>
+
+        <Typography className={classes.name}>Brandon Dodd</Typography>
         <Typography className={classes.contact}>
           <MailIcon />
           <a
             className={classes.contactEmail}
-            href="mailto:Tylermfranks10@gmail.com"
+            href="mailto:Brandondodd@gmail.com"
           >
-            Tylermfranks10@gmail.com
+            Brandondodd@gmail.com
           </a>
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <a className={classes.contactTel} href="tel:7024390592">
-            (702) 439-0592
+
+          <a className={classes.contactTel} href="tel:7204709593">
+            (702) 470-9593
           </a>
         </Typography>
       </CardContent>

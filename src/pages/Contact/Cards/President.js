@@ -66,20 +66,20 @@ function PresidentCard(props) {
         >
           President
         </Typography>
-        <Typography className={classes.name}>Logan Dodd</Typography>
+        <Typography className={classes.name}>Ty Guerra</Typography>
         <Typography className={classes.contact}>
           <MailIcon />
           <a
             className={classes.contactEmail}
-            href="mailto:sigmataugammazetasigma@gmail.com"
+            href="mailto:tyguerra@rams.colostate.edu"
           >
-            sigmataugammazetasigma@gmail.com
+            tyguerra@rams.colostate.edu
           </a>
         </Typography>
         <Typography className={classes.contact}>
           <PhoneIcon />
-          <a className={classes.contactTel} href="tel:7204700677">
-            (720) 470-0677
+          <a className={classes.contactTel} href="tel:3039055459">
+            (303) 905-5459
           </a>
         </Typography>
       </CardContent>

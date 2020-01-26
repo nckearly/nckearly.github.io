@@ -9,6 +9,7 @@
     "@mdi/font": "^3.5.95",
     "classnames": "^2.2.6",
     "contentful": "^7.3.0",
+    "gh-pages": "^2.2.0",
     "materialize-css": "^1.0.0-rc.2",
     "mdi-material-ui": "^5.10.0",
     "react": "^16.8.3",

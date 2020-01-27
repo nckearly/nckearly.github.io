@@ -109,6 +109,21 @@ const rows = [
   createData('Nicholas Pontejos', 'Delta', 'Founder'),
   createData('Henrique Rio', 'Delta', 'Founder'),
   createData('Connor Scott', 'Delta', 'Founder'),
+  createData('Parker Cahill', 'Epsilon', 'Founder'),
+  createData('Bryce Ciprianni', 'Epsilon', 'Founder'),
+  createData('Quinten Crum', 'Epsilon', 'Founder'),
+  createData('Brandon Dodd', 'Epsilon', 'Founder'),
+  createData('Logan Gottlob', 'Epsilon', 'Founder'),
+  createData('Bryant "Bry" Gross', 'Epsilon', 'Founder'),
+  createData('Christian Kivari', 'Epsilon', 'Founder'),
+  createData('Dylan Melcher', 'Epsilon', 'Founder'),
+  createData('Jacob Niss', 'Epsilon', 'Founder'),
+  createData('Jack Painter', 'Epsilon', 'Founder'),
+  createData('Peter Seby', 'Epsilon', 'Founder'),
+  createData('Keaton Slayden', 'Epsilon', 'Founder'),
+  createData('Adam Valdes', 'Epsilon', 'Founder'),
+  createData('John Wright', 'Epsilon', 'Founder'),
+
 ];
 
 function Members(props) {
